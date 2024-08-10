@@ -10,11 +10,15 @@ export const Section = styled.section`
 
 export const List = styled.ul`
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: 20px;
+  width: fit-content;
+  margin: 0 auto;
 
   @media screen and (min-width: 768px) {
     gap: 92px;
+    flex-direction: row;
   }
 `;

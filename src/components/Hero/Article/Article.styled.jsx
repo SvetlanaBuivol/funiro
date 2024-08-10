@@ -5,7 +5,7 @@ export const StyledArticle = styled.article`
   position: absolute;
   top: 28px;
   left: 20px;
-  width: 200px;
+  width: 160px;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.715);
 
@@ -42,7 +42,7 @@ export const Title = styled.h1`
 `;
 
 export const Text = styled.p`
-  font-size: ${textSize.xs};
+  font-size: 10px;
   color: ${color.mediumLightGreyText};
   margin-bottom: 8px;
   line-height: 120%;
@@ -62,7 +62,7 @@ export const Text = styled.p`
 export const Button = styled.button`
   width: 100%;
   background-color: ${color.orange};
-  padding: 10px 0;
+  padding: 6px 0;
   color: ${color.white};
   font-family: "Gilroy-SemiBold";
   font-size: ${textSize.xs};

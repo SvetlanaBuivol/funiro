@@ -3,11 +3,22 @@ import { color } from "../../../css/variables";
 
 export const Item = styled.li`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 10px;
+
+   img {
+    width: 30px;
+    height: 30px;
+  }
 
   @media screen and (min-width: 768px) {
     gap: 16px;
+    flex-direction: column;
+
+    img {
+    width: 40px;
+    height: 40px;
+  }
   }
 
   @media screen and (min-width: 1440px) {
@@ -15,10 +26,7 @@ export const Item = styled.li`
     gap: 24px;
   }
 
-  img {
-    width: 40px;
-    height: 40px;
-  }
+ 
 `;
 
 export const Title = styled.h3`
