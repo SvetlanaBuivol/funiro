@@ -14,7 +14,7 @@ function App() {
         <Route path="products" element={<ProductsPage />} />
         <Route path="favorites" element={<FavoritesPage />} />
         <Route path="shopcart" element={<ShopCartPage />} />
-        <Route path="account" element={<AccountPage/>} />
+        <Route path="account" element={<AccountPage />} />
       </Route>
     </Routes>
   );

@@ -10,12 +10,12 @@ import { ReactComponent as MenuIcon } from "../../assets/svg/hamburgerMenu.svg";
 import PropTypes from "prop-types";
 
 const UserActions = ({
-    openSearchBar,
-    isSearchIconVisible,
-    // openMobileMenu
+  openSearchBar,
+  isSearchIconVisible,
+  // openMobileMenu
 }) => {
-    const isTablet = useMediaQuery({ query: "(max-width: 1439px" });
-    const isMobile = useMediaQuery({ query: "(max-width: 767px" })
+  const isTablet = useMediaQuery({ query: "(max-width: 1439px" });
+  const isMobile = useMediaQuery({ query: "(max-width: 767px" });
 
   return (
     <Box>
@@ -29,21 +29,27 @@ const UserActions = ({
       </Link>
       <Link to="shopcart">
         <CartIcon />
-          </Link>
-          {!isMobile && <Link to="account">
-        <UserAvatar />
-          </Link>}
-          {isMobile && <button
-            //   onClick={openMobileMenu}
-          ><MenuIcon /></button>}
+      </Link>
+      {!isMobile && (
+        <Link to="account">
+          <UserAvatar />
+        </Link>
+      )}
+      {isMobile && (
+        <button
+        //   onClick={openMobileMenu}
+        >
+          <MenuIcon />
+        </button>
+      )}
     </Box>
   );
 };
 
 UserActions.propTypes = {
-    openSearchBar: PropTypes.func,
-    isSearchIconVisible: PropTypes.bool.isRequired,
-    // openMobileMenu: PropTypes.func.isRequired,
+  openSearchBar: PropTypes.func,
+  isSearchIconVisible: PropTypes.bool.isRequired,
+  // openMobileMenu: PropTypes.func.isRequired,
 };
 
 export default UserActions;

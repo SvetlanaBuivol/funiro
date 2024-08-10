@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 import HeaderNav from "../HeaderNav/HeaderNav";
 import SearchBar from "../SearchBar/SearchBar";
 import { Box, Logo } from "./Header.styled";
@@ -12,7 +12,7 @@ const Header = ({
 }) => {
   return (
     <Box>
-      <Link to='/'>
+      <Link to="/">
         <Logo>Funiro.</Logo>
       </Link>
       <HeaderNav />
@@ -30,6 +30,6 @@ Header.propTypes = {
   openSearchBar: PropTypes.func,
   isSearchIconVisible: PropTypes.bool.isRequired,
   // openMobileMenu: PropTypes.func.isRequired,
-}
+};
 
 export default Header;
