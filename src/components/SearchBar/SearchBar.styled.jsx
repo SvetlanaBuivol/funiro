@@ -7,8 +7,12 @@ export const SearchBox = styled.div`
   align-items: center;
   gap: 12px;
   width: ${(props) => (props.$isMobileSearch ? "320px" : "473px")};
-  padding: 12px;
+  padding: 6px;
   background-color: ${color.white};
+
+  @media screen and (min-width: 1440px) {
+    padding: 12px;
+  }
 
   ${(props) =>
     props.$isMobileSearch &&
