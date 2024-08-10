@@ -3,7 +3,6 @@ import { color } from "../../css/variables";
 import Slider from "react-slick";
 
 export const HeroSection = styled.section`
-  /* position: relative; */
   background: linear-gradient(
     to right,
     ${color.mediumLightOrange} 67%,
@@ -29,7 +28,6 @@ export const StyledSlider = styled(Slider)`
   top: 57px;
   max-width: 100%;
 
-
   .prev {
     display: none !important;
   }
@@ -47,7 +45,6 @@ export const StyledSlider = styled(Slider)`
   .slick-slide {
     padding: 0 8px;
     box-sizing: border-box;
-    /* width: 300px; */
   }
 
   .slick-track {
@@ -113,9 +110,9 @@ export const StyledSlider = styled(Slider)`
     top: 87px;
 
     .slick-slide {
-    padding: 0 16px;
-    box-sizing: border-box;
-  }
+      padding: 0 16px;
+      box-sizing: border-box;
+    }
   }
 `;
 

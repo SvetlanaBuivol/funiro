@@ -48,7 +48,6 @@ export const StyledSlider = styled(Slider)`
   }
 
   .slick-slide {
-    /* width: 200px; */
     padding: 0 12px;
     box-sizing: border-box;
   }
@@ -138,19 +137,18 @@ export const Box = styled.div`
     width: 378px;
 
     h2 {
-    font-size: 40px;
-    margin-bottom: 8px;
-  }
+      font-size: 40px;
+      margin-bottom: 8px;
+    }
 
-  p {
-    margin-bottom: 24px;
-  }
+    p {
+      margin-bottom: 24px;
+    }
 
-  button {
-    padding: 12px;
-    width: 176px;
-  }
-
+    button {
+      padding: 12px;
+      width: 176px;
+    }
   }
 `;
 
