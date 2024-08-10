@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Item, Title } from "./BenefitItem.styled";
+import { Item, Text, Title } from "./BenefitItem.styled";
 
 const BenefitItem = ({ item }) => {
   return (
@@ -7,7 +7,7 @@ const BenefitItem = ({ item }) => {
       <img src={item.img} alt="" />
       <div>
         <Title>{item.benefit}</Title>
-        <p>{item.text}</p>
+        <Text>{item.text}</Text>
       </div>
     </Item>
   );
