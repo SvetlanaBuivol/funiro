@@ -1,5 +1,7 @@
+import { useMediaQuery } from "react-responsive";
+import PropTypes from "prop-types";
 import {
-    Box,
+  Box,
   ImageWrapper,
   NextButton,
   Section,
@@ -11,10 +13,8 @@ import img1 from "../../assets/images/inspirations/room1.jpg";
 import img2 from "../../assets/images/inspirations/room2.jpg";
 import img3 from "../../assets/images/inspirations/room3.jpg";
 import { ReactComponent as PrevArrow } from "../../assets/svg/prevArrow.svg";
-import { useMediaQuery } from "react-responsive";
 
-const CustomNextArrow = (props) => {
-  const { onClick } = props;
+const CustomNextArrow = ({ onClick }) => {
   return (
     <NextButton className="next-room" onClick={onClick}>
       <PrevArrow />
@@ -68,8 +68,8 @@ const InspirationsSection = () => {
           <p>
             Our designer already made a lot of beautiful prototipe of rooms that
             inspire you
-                  </p>
-                  <button>Explore More</button>
+          </p>
+          <button>Explore More</button>
         </Box>
         <CustomNextArrow
           onClick={() => document.querySelector(".next-room").click()}
@@ -77,6 +77,10 @@ const InspirationsSection = () => {
       </StyledContainer>
     </Section>
   );
+};
+
+CustomNextArrow.propTypes = {
+  onClick: PropTypes.func.isRequired,
 };
 
 export default InspirationsSection;

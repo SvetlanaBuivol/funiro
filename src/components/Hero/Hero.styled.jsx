@@ -3,7 +3,7 @@ import { color } from "../../css/variables";
 import Slider from "react-slick";
 
 export const HeroSection = styled.section`
-  position: relative;
+  /* position: relative; */
   background: linear-gradient(
     to right,
     ${color.mediumLightOrange} 67%,
@@ -27,6 +27,8 @@ export const Wrapper = styled.div`
 
 export const StyledSlider = styled(Slider)`
   top: 57px;
+  max-width: 100%;
+
 
   .prev {
     display: none !important;
@@ -38,16 +40,24 @@ export const StyledSlider = styled(Slider)`
 
   .slick-slider {
     bottom: 0;
+    display: flex;
+    min-width: 200px;
   }
 
   .slick-slide {
-    padding: 0 16px;
+    padding: 0 8px;
     box-sizing: border-box;
+    /* width: 300px; */
+  }
+
+  .slick-track {
+    display: flex;
   }
 
   .slick-dots {
     top: -57px;
     display: flex;
+    height: fit-content;
 
     li {
       width: 20px;
@@ -101,6 +111,11 @@ export const StyledSlider = styled(Slider)`
 
   @media screen and (min-width: 768px) {
     top: 87px;
+
+    .slick-slide {
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
   }
 `;
 

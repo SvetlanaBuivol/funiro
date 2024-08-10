@@ -48,7 +48,7 @@ export const StyledSlider = styled(Slider)`
   }
 
   .slick-slide {
-    width: 200px;
+    /* width: 200px; */
     padding: 0 12px;
     box-sizing: border-box;
   }
