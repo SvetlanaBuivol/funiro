@@ -6,7 +6,7 @@ import img1 from "./assets/images/products/image1.jpg";
 import img2 from "./assets/images/products/image2.jpg";
 import img3 from "./assets/images/products/image3.jpg";
 import img4 from "./assets/images/products/image4.jpg";
-import img5 from "./assets/images/products/image5.jpg";
+import img5 from "./assets/images/products/Image5.jpg";
 import img6 from "./assets/images/products/image6.jpg";
 import img7 from "./assets/images/products/image7.jpg";
 import img8 from "./assets/images/products/image8.jpg";
