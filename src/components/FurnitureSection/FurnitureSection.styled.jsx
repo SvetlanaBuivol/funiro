@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  position: relative;
+  /* position: relative; */
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
 
   img {
-    position: absolute;
-    top: 58px;
+    position: relative;
+    top: -12px;
     left: 0;
     width: 100%;
   }
@@ -18,7 +18,7 @@ export const Section = styled.section`
     padding-bottom: 87px;
 
     img {
-      top: 98px;
+      top: -25px;
     }
   }
 `;
